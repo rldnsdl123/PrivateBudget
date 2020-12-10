@@ -80,6 +80,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Styles\Colors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Fonts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -99,6 +107,24 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Resource Include="Fonts\Lato-Black.ttf" />
+    <Resource Include="Fonts\Lato-BlackItalic.ttf" />
+    <Resource Include="Fonts\Lato-Bold.ttf" />
+    <Resource Include="Fonts\Lato-BoldItalic.ttf" />
+    <Resource Include="Fonts\Lato-Hairline.ttf" />
+    <Resource Include="Fonts\Lato-HairlineItalic.ttf" />
+    <Resource Include="Fonts\Lato-Heavy.ttf" />
+    <Resource Include="Fonts\Lato-HeavyItalic.ttf" />
+    <Resource Include="Fonts\Lato-Italic.ttf" />
+    <Resource Include="Fonts\Lato-Light.ttf" />
+    <Resource Include="Fonts\Lato-LightItalic.ttf" />
+    <Resource Include="Fonts\Lato-Medium.ttf" />
+    <Resource Include="Fonts\Lato-MediumItalic.ttf" />
+    <Resource Include="Fonts\Lato-Regular.ttf" />
+    <Resource Include="Fonts\Lato-Semibold.ttf" />
+    <Resource Include="Fonts\Lato-SemiboldItalic.ttf" />
+    <Resource Include="Fonts\Lato-Thin.ttf" />
+    <Resource Include="Fonts\Lato-ThinItalic.ttf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -110,6 +136,108 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="FodyWeavers.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Icons\001-chat.png" />
+    <Resource Include="Icons\002-microphone.png" />
+    <Resource Include="Icons\003-money.png" />
+    <Resource Include="Icons\004-heart.png" />
+    <Resource Include="Icons\005-user.png" />
+    <Resource Include="Icons\006-trophy.png" />
+    <Resource Include="Icons\007-car.png" />
+    <Resource Include="Icons\008-user.png" />
+    <Resource Include="Icons\009-user.png" />
+    <Resource Include="Icons\010-information.png" />
+    <Resource Include="Icons\011-cloud computing.png" />
+    <Resource Include="Icons\012-edit.png" />
+    <Resource Include="Icons\013-layers.png" />
+    <Resource Include="Icons\014-loupe.png" />
+    <Resource Include="Icons\015-folder.png" />
+    <Resource Include="Icons\016-presentation.png" />
+    <Resource Include="Icons\017-trash.png" />
+    <Resource Include="Icons\018-video camera.png" />
+    <Resource Include="Icons\019-key.png" />
+    <Resource Include="Icons\020-users.png" />
+    <Resource Include="Icons\021-message.png" />
+    <Resource Include="Icons\022-speakers.png" />
+    <Resource Include="Icons\023-battery.png" />
+    <Resource Include="Icons\024-settings.png" />
+    <Resource Include="Icons\025-favorites.png" />
+    <Resource Include="Icons\026-gamepad.png" />
+    <Resource Include="Icons\027-compass.png" />
+    <Resource Include="Icons\028-credit card.png" />
+    <Resource Include="Icons\029-user.png" />
+    <Resource Include="Icons\030-planet earth.png" />
+    <Resource Include="Icons\031-book.png" />
+    <Resource Include="Icons\032-monitor.png" />
+    <Resource Include="Icons\033-flag.png" />
+    <Resource Include="Icons\034-laptop.png" />
+    <Resource Include="Icons\035-return.png" />
+    <Resource Include="Icons\036-eraser.png" />
+    <Resource Include="Icons\037-paint brush.png" />
+    <Resource Include="Icons\038-id card.png" />
+    <Resource Include="Icons\039-calendar.png" />
+    <Resource Include="Icons\040-filter.png" />
+    <Resource Include="Icons\041-file.png" />
+    <Resource Include="Icons\042-printer.png" />
+    <Resource Include="Icons\043-eye.png" />
+    <Resource Include="Icons\044-placeholder.png" />
+    <Resource Include="Icons\045-file.png" />
+    <Resource Include="Icons\046-download.png" />
+    <Resource Include="Icons\047-map.png" />
+    <Resource Include="Icons\048-medal.png" />
+    <Resource Include="Icons\049-cloud.png" />
+    <Resource Include="Icons\050-settings.png" />
+    <Resource Include="Icons\051-chat.png" />
+    <Resource Include="Icons\052-zoom out.png" />
+    <Resource Include="Icons\053-file.png" />
+    <Resource Include="Icons\054-mail.png" />
+    <Resource Include="Icons\055-cursor.png" />
+    <Resource Include="Icons\056-speaker.png" />
+    <Resource Include="Icons\057-battery.png" />
+    <Resource Include="Icons\058-photo camera.png" />
+    <Resource Include="Icons\059-alarm clock.png" />
+    <Resource Include="Icons\060-reload.png" />
+    <Resource Include="Icons\061-calculator.png" />
+    <Resource Include="Icons\062-smartphone.png" />
+    <Resource Include="Icons\063-fast forward.png" />
+    <Resource Include="Icons\064-wifi.png" />
+    <Resource Include="Icons\065-envelope.png" />
+    <Resource Include="Icons\066-line chart.png" />
+    <Resource Include="Icons\067-padlock.png" />
+    <Resource Include="Icons\068-zoom in.png" />
+    <Resource Include="Icons\069-bell.png" />
+    <Resource Include="Icons\070-bluetooth.png" />
+    <Resource Include="Icons\071-box.png" />
+    <Resource Include="Icons\072-inbox.png" />
+    <Resource Include="Icons\073-play button.png" />
+    <Resource Include="Icons\074-safebox.png" />
+    <Resource Include="Icons\075-cutlery.png" />
+    <Resource Include="Icons\076-megaphone.png" />
+    <Resource Include="Icons\077-file.png" />
+    <Resource Include="Icons\078-pause.png" />
+    <Resource Include="Icons\079-share.png" />
+    <Resource Include="Icons\080-folder.png" />
+    <Resource Include="Icons\081-settings.png" />
+    <Resource Include="Icons\082-padlock.png" />
+    <Resource Include="Icons\083-rss.png" />
+    <Resource Include="Icons\084-bar chart.png" />
+    <Resource Include="Icons\085-power button.png" />
+    <Resource Include="Icons\086-home.png" />
+    <Resource Include="Icons\087-upload.png" />
+    <Resource Include="Icons\088-next.png" />
+    <Resource Include="Icons\089-message.png" />
+    <Resource Include="Icons\090-phone call.png" />
+    <Resource Include="Icons\091-cloud computing.png" />
+    <Resource Include="Icons\092-message.png" />
+    <Resource Include="Icons\093-shopping cart.png" />
+    <Resource Include="Icons\094-like.png" />
+    <Resource Include="Icons\095-music.png" />
+    <Resource Include="Icons\096-idea.png" />
+    <Resource Include="Icons\097-atomic.png" />
+    <Resource Include="Icons\098-checked.png" />
+    <Resource Include="Icons\099-shield.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.1.29.2\build\dotnet\Fody.targets" Condition="Exists('..\packages\Fody.1.29.2\build\dotnet\Fody.targets')" />

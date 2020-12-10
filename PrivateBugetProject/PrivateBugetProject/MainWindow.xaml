@@ -9,6 +9,7 @@
         AllowsTransparency="True"
         WindowStartupLocation="CenterScreen"
         x:Name="AppWindow"
+        Icon="Icons/003-money.png"
         MinWidth="{Binding WindowMinWidth}"
         MinHeight="{Binding WindowMinHeight}"
         Title="MainWindow" Height="450" Width="800">
@@ -18,10 +19,14 @@
             <RowDefinition Height="40"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
+        
+        
+        
+        
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button Command="{Binding MinimizeCmd}"/>
-            <Button Command="{Binding MaximizeCmd}"/>
-            <Button Command="{Binding ExitCmd}"/>
+            <Button Command="{Binding MinimizeCmd}" Style="{StaticResource WindowControlButton}" Foreground="Black" Content="_"/>
+            <Button Command="{Binding MaximizeCmd}" Style="{StaticResource WindowControlButton}" Foreground="Black" Content="ㅁ"/>
+            <Button Command="{Binding ExitCmd}" Style="{StaticResource WindowControlButton}" Foreground="Black" Content="X"/>
         </StackPanel>
     </Grid>
 </Window>
