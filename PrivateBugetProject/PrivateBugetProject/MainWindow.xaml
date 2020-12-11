@@ -13,6 +13,17 @@
         MinWidth="{Binding WindowMinWidth}"
         MinHeight="{Binding WindowMinHeight}"
         Title="MainWindow" Height="450" Width="800">
+
+    <Window.Style>
+        <Style TargetType="Window">
+            <Style.Triggers>
+                <Trigger Property="WindowState" Value="Maximized">
+                    <Setter Property="ShowInTaskbar" Value="True"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Style>
+    
     <Grid>
 
         <Grid.RowDefinitions>
@@ -26,20 +37,23 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <Button Style="{StaticResource SystemIconButton}" Width="Auto">
+            <Button Style="{StaticResource SystemIconButton}" Width="Auto" Command="{Binding MenuCmd}">
                 <Image Source="Icons/003-money.png"/>
             </Button>
-
         </Grid>
 
-
-
-
+        <Viewbox Grid.Column="0" Stretch="Uniform">
+            <StackPanel>
+                <TextBlock FontFamily="{StaticResource LatoBold}" FontSize="3" TextAlignment="Center" VerticalAlignment="Center">
+                    <Run Text="Money In Out Register" Foreground="black"/>
+                </TextBlock>
+            </StackPanel>
+        </Viewbox>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
             <Button Command="{Binding MinimizeCmd}" Style="{StaticResource WindowControlButton}" Foreground="Black" Content="_"/>
             <Button Command="{Binding MaximizeCmd}" Style="{StaticResource WindowControlButton}" Foreground="Black" Content="ㅁ"/>
-            <Button Command="{Binding ExitCmd}" Style="{StaticResource WindowControlButton}" Foreground="Black" Content="X"/>
+            <Button Command="{Binding MenuCmd}" Style="{StaticResource WindowCloseButton}" Foreground="Black" Content="X"/>
         </StackPanel>
     </Grid>
 </Window>

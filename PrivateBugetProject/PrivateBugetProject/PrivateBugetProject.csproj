@@ -63,6 +63,7 @@
     </ApplicationDefinition>
     <Compile Include="ViewModel\Base\BaseCommand.cs" />
     <Compile Include="ViewModel\Base\BasePropertyChange.cs" />
+    <Compile Include="ViewModel\Enum\eWindowState.cs" />
     <Compile Include="ViewModel\WindowViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -137,7 +138,12 @@
   <ItemGroup>
     <Resource Include="FodyWeavers.xml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Utility\Utility.csproj">
+      <Project>{3ddc5034-f037-49de-a256-77aa7badcb90}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Icons\001-chat.png" />
     <Resource Include="Icons\002-microphone.png" />
