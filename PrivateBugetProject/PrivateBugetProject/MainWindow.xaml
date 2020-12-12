@@ -13,16 +13,6 @@
         MinWidth="{Binding WindowMinWidth}"
         MinHeight="{Binding WindowMinHeight}"
         Title="MainWindow" Height="450" Width="800">
-
-    <Window.Style>
-        <Style TargetType="Window">
-            <Style.Triggers>
-                <Trigger Property="WindowState" Value="Maximized">
-                    <Setter Property="ShowInTaskbar" Value="True"/>
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-    </Window.Style>
     
     <Grid>
 
@@ -41,7 +31,6 @@
                 <Image Source="Icons/003-money.png"/>
             </Button>
         </Grid>
-
         <Viewbox Grid.Column="0" Stretch="Uniform">
             <StackPanel>
                 <TextBlock FontFamily="{StaticResource LatoBold}" FontSize="3" TextAlignment="Center" VerticalAlignment="Center">
@@ -52,8 +41,16 @@
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
             <Button Command="{Binding MinimizeCmd}" Style="{StaticResource WindowControlButton}" Foreground="Black" Content="_"/>
-            <Button Command="{Binding MaximizeCmd}" Style="{StaticResource WindowControlButton}" Foreground="Black" Content="ㅁ"/>
+            <Button Command="{Binding MaximizeCmd}" Style="{StaticResource WindowControlButton}" Foreground="Black" Content="□"/>
+            <Button Command="{Binding NormalizeCmd}" Style="{StaticResource WindowControlButton}" Foreground="Black" Content="□"/>
             <Button Command="{Binding MenuCmd}" Style="{StaticResource WindowCloseButton}" Foreground="Black" Content="X"/>
         </StackPanel>
     </Grid>
+    <WindowChrome.WindowChrome>
+        <WindowChrome
+            ResizeBorderThickness="{Binding ResizeBorderThickness}"
+            CaptionHeight="{Binding TitleHeight}"
+            GlassFrameThickness="0"
+            CornerRadius="0"/>
+    </WindowChrome.WindowChrome>    
 </Window>
